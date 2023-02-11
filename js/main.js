@@ -13,17 +13,12 @@ let codigoPostal = document.getElementById("codigo-postal");
 let email = document.getElementById("email");
 let nacionalidad = document.getElementById('nacionalidad');
 
-const url =' https://randomuser.me/api/ ';
+const url =' https://randomuser.me/api/?nat=ES ';
 
 fetch(url)
-    //.then(parseJSON)
     .then(url => url.json())
     .then(updateProfile)
-/*
-function parseJSON (res){
-  return res.json();
-}
-*/
+
 function updateProfile (data){
   pagina.innerText = data.results[0].name.first +" "+ data.results[0].name.last;
   fotoCv.src = data.results[0].picture.large;
@@ -40,3 +35,4 @@ function updateProfile (data){
   email.innerText = "E-mail: "+data.results[0].email,
   nacionalidad.innerText = "Nacionalidad: "+data.results[0].location.country;
 }
+
