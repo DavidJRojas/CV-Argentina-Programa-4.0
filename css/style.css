@@ -1,9 +1,11 @@
-
+h1, h2, h3, h4, p, label{
+    font-family: 'Inter', sans-serif;
+}
 .row {
     display: table;
 }
 .contacto{
-    margin: 24px 0px 0px 0px!important;
+    margin: 12px 0px 0px 0px!important;
     padding: 12px 12px 12px 12px !important;
 }
 .cuadro [class*="col-"] {
@@ -13,6 +15,7 @@
     background-color: #0d6efd;
     color: #0d6efd;
     border: 12px solid rgb(12, 175, 225);
+    padding-top: 12px;
 }
 .enviar{
     padding: 5px;
@@ -20,4 +23,10 @@
 }
 .body{
     background-color: rgb(12, 175, 225);
+}
+i{
+    padding: 12px;
+}
+.oculto{
+    display: none;
 }

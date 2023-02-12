@@ -12,7 +12,7 @@ let localidad = document.getElementById("localidad");
 let codigoPostal = document.getElementById("codigo-postal");
 let email = document.getElementById("email");
 let nacionalidad = document.getElementById('nacionalidad');
-
+let botonContactame = document.getElementById('boton-contactame')
 const url =' https://randomuser.me/api/?nat=ES ';
 
 fetch(url)
