@@ -13,6 +13,9 @@ let codigoPostal = document.getElementById("codigo-postal");
 let email = document.getElementById("email");
 let nacionalidad = document.getElementById('nacionalidad');
 
+let botonContactame = document.getElementById('boton-contactame')
+let formContactame = document.getElementById('contacto-usuario')
+
 const url =' https://randomuser.me/api/?nat=ES ';
 
 fetch(url)
@@ -34,5 +37,24 @@ function updateProfile (data){
   codigoPostal.innerText = "Codigo postal: "+data.results[0].location.postcode;
   email.innerText = "E-mail: "+data.results[0].email,
   nacionalidad.innerText = "Nacionalidad: "+data.results[0].location.country;
+}
+
+botonContactame.addEventListener("click",function(){
+  mostrarOcultar(formContactame)
+});
+
+function mostrarOcultar (elemento){
+  if(tieneClass("oculto", elemento)){
+    elemento.classList.remove('oculto');
+        botonContactame.innerText = "ocultar"
+
+  }else{
+    elemento.classList.add('oculto');
+    botonContactame.innerText = "Contactame!"
+  }
+}
+function tieneClass (clase, elemento ){
+  return elemento.classList.contains(clase)
+  
 }
 
