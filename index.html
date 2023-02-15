@@ -16,25 +16,29 @@
     <header>
         <div class="container text-center"> 
             <div class="row justify-content-md-center">
-                <div class="col">
+                <div class="col-4">
                     <img id="foto-cv" src="" alt="foto de perfil" class="rounded-circle mx-auto d-block">
-                    <h1 id="nombrecompleto">name placeholder</h1>
-                    <h2>Profesión: Puesto de trabajo.</h2>
-                    <ul class="nav ">
-                        <li class="nav-item body">
+                    <h1 class="text-bg-primary border border-light rounded" id="nombrecompleto">name placeholder</h1>
+                    <h2 class="text-bg-primary border border-light rounded">Puesto de trabajo.</h2>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-auto">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
                             <a class="nav-link active text-bg-primary" aria-current="page" href="#">Active</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-bg-primary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Redes</a>
-                        <ul class="dropdown-menu text-bg-primary">
-                            <li><a class="dropdown-item text-bg-primary" href="https://twitter.com"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item text-bg-primary" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item text-bg-primary" href="https://www.linkedin.com"><i class="fa-brands fa-instagram"></i>LinkedIn</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item text-bg-primary" href="#"><i class="fa-brands fa-slack"></i>Slack</a></li>
-                        </ul>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li><a class="dropdown-item text-bg-primary" href="https://twitter.com"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-bg-primary" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-bg-primary" href="https://www.linkedin.com"><i class="fa-brands fa-instagram"></i>LinkedIn</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-bg-primary" href="#"><i class="fa-brands fa-slack"></i>Slack</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-bg-primary" href="#">Link</a>
@@ -54,8 +58,8 @@
                 <div class="row justify-content-md-center cuadro">
                     <div class="col-md-6 text-center">
                         <article class="text-bg-primary overflow-auto" >
-                            <h3><i class="fa-solid fa-user"></i><u>Información Personal</u></h3>
-                                <ul class="list-group list-group-flush">
+                            <h3><i class="fa-solid fa-user"></i><u class="titular-seccion">Información Personal</u></h3>
+                            <ul class="list-group list-group-flush">
                                     <li class="list-group-item  text-bg-primary" id="nombre">Nombre: Nombre</li>
                                     <li class="list-group-item  text-bg-primary" id="apellido">Apellido: Apellido</li>
                                     <li class="list-group-item  text-bg-primary" id="edad">Edad: 00</li>
@@ -73,13 +77,15 @@
                     </div>
                     <div class="col-md-6 text-center">
                         <article class=" text-bg-primary overflow-auto">
-                            <h3><i class="fa-solid fa-list"></i><u>Conocimientos</u></h3>
+                            <div class="border-bottom border-light">
+                            <h3><i class="fa-solid fa-list"></i><u class="titular-seccion">Conocimientos</u></h3>
                             <p>Lorem ipsum dolor sit amet.</p>
                             <p>Lorem ipsum.</p>
                             <p>Lorem ipsum dolor sit.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur.</p>
                             <p>Lorem ipsum dolor sit.</p>
-                            <h3><i class="fa-solid fa-graduation-cap"></i><u>Certificados</u></h3>
+                        </div>
+                            <h3><i class="fa-solid fa-graduation-cap"></i><u class="titular-seccion">Certificados</u></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                             <p>Lorem ipsum dolor sit.</p>
@@ -97,7 +103,7 @@
                 <div class="row justify-content-md-center cuadro">
                     <div class="col-md-6 text-center">
                         <article class="text-bg-primary overflow-auto">
-                            <h3><i class="fa-solid fa-briefcase"></i><u>Experiencia Laboral</u></h3>
+                            <h3><i class="fa-solid fa-briefcase"></i><u class="titular-seccion">Experiencia Laboral</u></h3>
                                 <h4>Experiencia4:</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 <h4>Experiencia3:</h4>
@@ -110,7 +116,7 @@
                 </div>
                 <div class="col-md-6 text-center ">
                     <article class="text-bg-primary overflow-auto">
-                        <h3><i class="fa-solid fa-school"></i><u>Estudios</u></h3>
+                        <h3><i class="fa-solid fa-school"></i><u class="titular-seccion">Estudios</u></h3>
                         <h4>Terciario:</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur.</p>
                         <h4>Secundario:</h4>
@@ -127,7 +133,7 @@
                 <div class="row justify-content-md-center cuadro">
                     <div class="col text-center">
                         <article class="text-bg-primary overflow-auto">
-                            <h3><i class="fa-regular fa-address-card"></i><u>Resumen</u></h3>
+                            <h3><i class="fa-regular fa-address-card"></i><u class="titular-seccion">Resumen</u></h3>
                             <ol class="list-group list-group-flush">
                                 <li class="list-group-item  text-bg-primary">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et lacus.
@@ -157,20 +163,24 @@
             </div>
         </section>
 
-        <div class="container-fluid text-bg-primary">
-            <div class="row justify-content-md-center contacto">
-                <div class="col-md-6 text-center text-bg-primary">
+        <div class="container">
+            <div class="row justify-content-md-center border border-light contacto">
+                <div class="col-md-12 text-center text-bg-primary">
                     <button type="submit" id="boton-contactame" class="btn btn-lg btn-block btn-success enviar">Contactame!</button>
-                    <form class="text-bg-primary oculto" id="contacto-usuario" >
-                        <h4><u>Contactame!</u></h4>
-                        <label for="nombre-usuario" class="form-label">nombre</label>
-                        <input type="text" class="form-control" id="nombre-usuario" placeholder="Ingrese su nombre" required="required">
-                        <label for="email-usuario" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email-usuario" placeholder="Ingrese su mail" required="required">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required="required"></textarea>
-                        <button type="submit" class="btn btn-lg btn-block btn-success enviar">Enviar</button>
-                    </form>
+                    <div class="row justify-content-md-center contacto">
+                        <div class="col-md-6 text-center text-bg-primary">
+                            <form class="text-bg-primary oculto" id="contacto-usuario" >
+                                <h4><u>Contactame!</u></h4>
+                                <label for="nombre-usuario" class="form-label">Nombre o Empresa</label>
+                                <input type="text" class="form-control" id="nombre-usuario" placeholder="Ingrese su nombre o el de su empresa." required="required">
+                                <label for="email-usuario" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email-usuario" placeholder="Ingrese su email." required="required">
+                                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su mensaje." rows="3" required="required"></textarea>
+                                <button type="submit" class="btn btn-lg btn-block btn-success enviar">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
