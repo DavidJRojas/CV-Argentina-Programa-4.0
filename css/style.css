@@ -1,17 +1,16 @@
 h1, h2, h3, h4, p, label, li{
     font-family: 'Inter', sans-serif;
+    text-shadow: 1.5px 1.5px 1.5px #333;
 }
 .row {
     display: table;
 }
 .contacto{
     margin: 12px 0px 0px 0px !important;
-    padding: 12px 12px 12px 12px !important;
 }
 .cuadro [class*="col-"] {
     display: table-cell;
     /* Propiedades de estilo, no afectan al funcionamiento 
-
     */
     background-color: #0d6efd;
     text-align: center;
@@ -25,10 +24,18 @@ h1, h2, h3, h4, p, label, li{
 .body{
     background-color: #0846a4;
 }
-
 i{
     padding: 12px;
 }
 .oculto{
     display: none;
+}
+img{
+    margin: 6px;
+}
+.titular-seccion{
+    display: flex;
+    background:#0d6efd; 
+    padding: 0px 15px 0px 15px;
+    justify-content: center;
 }
